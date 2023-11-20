@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            color: #808080;
+            background: url(img/background.png);
+
+            
+        }
+        .block{
+            width: 35%;
+            margin:0 auto;
+        }
+        .answers{
+            border: 1.5px solid #e31f42;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 25px;
+            margin-bottom: 0px;
+            width: 94%;  
+        }
+
+        .answers:hover{
+            background: white;
+            color: white;
+            transition: 0.4s;  
+            background-color: #e31f42;
+        }
+        #voch{
+            display: none;
+            color: white;
+            border: 1.5px solid #e31f42;
+            border-radius: 25px;
+            padding: 10px;
+            background-color: #e31f42;
+        }
+        #yntrvacEq{
+            display: none;
+            color: green;
+            border: 1.5px solid #e31f42;
+            border-radius: 25px;
+            padding: 10px;
+            background-color: white;
+
+        }
+        #answ4{
+            display: none;
+        }
+
+        .logo{
+            display: inline-block;
+            width: 12%;
+
+        }
+        .logodiv{
+            display: inline-block;
+            margin-top: 620px;
+        }
+        .pb{
+            color: #808080;
+            font-size: 20px;
+            font-family: Brush Script MT;
+            display: inline-block;
+            margin: 0;
+            text-decoration: none;
+            
+
+        }
+        
+        .logo2{
+            display: inline-block;
+            width: 9%;
+            margin-right: 76vw;
+        }
+        .textpb{
+            display: inline-block;
+            position: relative;
+        }
+
+        @media (min-width: 320px) and (max-width: 568px){
+            .answers{
+                width: 85%;
+            }
+            .block{
+                width: 63%;
+            }
+            .logodiv{
+                margin-top: 28vh;
+            }
+            .logo{
+                display: inline-block;
+                width: 35%;
+            }
+            .logo2{
+                display: inline-block;
+                width: 25%;
+                margin-right: 25vw;
+            }
+        }
+        @media (min-width: 375px) and (max-width: 667px){
+            .logodiv{
+                margin-top: 36vh;
+            }
+            .block{
+                width: 75%;
+            }
+            .answers{
+                width: 90%;
+            }
+            .logo{
+                width: 35%;
+            }
+            .logo2{
+                width: 25%;
+                margin-right: 25vw;
+            }
+        }
+        @media (min-width: 414px) and (max-width: 736px){
+            .answers{
+                width: 90%;
+            }
+            .block{
+                width: 75%;
+            }
+            .logodiv{
+                margin-top: 40vh;
+            }
+            .logo{
+                width: 35%;
+            }
+            .logo2{
+                width: 25%;
+                margin-right: 25vw;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1024px){
+            .answers{
+                width: 95%;
+            }
+            .block{
+                width: 75%;
+            }
+            .logodiv{
+                margin-top: 55vh;
+            }
+            .logo{
+                width: 30%;
+            }
+            .logo2{
+                width: 20%;
+                margin-right: 25vw;
+            }
+        }
+         @media (min-width: 667px) and (max-width: 1600px){
+            .answers{
+                width: 95%;
+            }
+            .block{
+                width: 60%;
+            }
+            .logodiv{
+                margin-top: 53vh;
+            }
+            .logo{
+                width: 10%;
+            }
+            .logo2{
+                width: 7%;
+                margin-right: 80vw;
+            }
+        }    
+
+    </style>
+</head>
+<body>
+
+
+    <div class="block">
+        <h2 class="harc">Ո՞ր սեկտորում եք աշխատում</h2>
+        <hr>
+        <h3 class="answers" id="answ1" onclick="fun1(innerHTML)">Պետական</h3>
+
+        <h3 class="answers" id="answ2" onclick="fun1(innerHTML)">Մասնավոր</h3>
+
+        <h3 class="answers" id="answ3" onclick="fun1(innerHTML)">Մարտի 30-ի դրությամբ գրանցված աշխատող չեմ կամ չեմ աշխատում</h3>
+
+          <h3 class="answers" id="answ4" onclick="fun1(innerHTML)">Չեմ պատկանում վերոնշյալ խմբերից որևէ մեկին</h3>
+
+        <h1 id="voch">Դուք չեք հանդիսանում շահառու</h1>
+        <h1 id="yntrvacEq">Դուք հանդիսանում եք շահառու</h1>
+    </div>
+
+    <div class="logodiv">
+        <a href="https://covid19.gov.am">
+        <img class="logo2" src="img/logo2.png"></a>
+
+
+            <a  href="http://weflex.am/" target="_blank"> 
+                <img class="logo" src="img/logo.png">
+            </a>
+
+
+        
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- By Vardan Geghamyan -->
+<!-- By Daniil Kudryashov -->
